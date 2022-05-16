@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>baitapjs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- bài tập 1 -->
+    <div class="container w-50 mx-auto">
+      <div class="p-3 border border-primary">
+        <h4>
+          BÀI TẬP 1: Tìm số nguyên dương nhỏ nhất sao cho 1+2+...+N >10000
+        </h4>
+        <form class="">
+          <button
+            onclick="timSoNguyenN()"
+            type="button"
+            id="baitap1"
+            class="btn btn-danger"
+          >
+            Tìm N
+          </button>
+          <p id="ketquabai1" class="alert alert-danger mt-4"></p>
+        </form>
+      </div>
+    </div>
+    <!-- bài tập 2 -->
+    <div class="container w-50 my-5">
+      <div class="p-3 border border-primary">
+        <h4>BÀI TẬP 2: Tính tổng: S(n) = x + x^2 + x^3 + … + x^n</h4>
+        <form>
+          <label for="x">Nhập số x</label>
+          <input id="x" type="number" /> <br />
+          <label for="n">Nhập số n</label>
+          <input id="n" type="number" /><br />
+          <button
+            onclick="tinhTongS()"
+            type="button"
+            id="baitap2"
+            class="btn btn-danger"
+          >
+            Tính tổng
+          </button>
+          <p id="ketquabai2" class="alert alert-danger mt-4"></p>
+        </form>
+      </div>
+    </div>
+    <!-- bài tập 3 -->
+    <div class="container w-50">
+      <div class="border border-primary p-3">
+        <h4>BÀI TẬP 3: Tính giai thừa khi nhập n</h4>
+        <form>
+          <label for="inputN">nhập vào n</label>
+          <input id="inputN" type="number" /> <br />
+          <button onclick="giaiThua()" type="button" class="btn btn-danger">
+            Tính giai thừa
+          </button>
+          <p id="ketquabt3" class="alert alert-danger mt-4"></p>
+        </form>
+      </div>
+    </div>
+    <!-- bài tập 4 -->
+    <div class="container w-50">
+      <div class="border border-primary p-3 mt-5">
+        <h4>BÀI TẬP 4: tạo 10 DIV</h4>
+        <p id="ketquabai4" class="alert alert-dark"></p>
+        <button onclick="taoDIV()" type="button" class="btn btn-danger">
+          Tạo 10 div
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/baitap1.js"></script>
+    <script src="./js/baitap2.js"></script>
+    <script src="./js/baitap3.js"></script>
+    <script src="./js/baitap4.js"></script>
+  </body>
+</html>
